@@ -14,12 +14,14 @@ ImprovedResNet offers a careful balance between model capacity, computational ef
 - **Kaiming Weight Initialization**: Ensures stable gradient flow during training
 
 ## Architecture Details
-
+![Model Architecture](images/detailed_improved_resnet_architecture.png) 
 ImprovedResNet builds upon the traditional ResNet architecture with several enhancements:
 
 - **Bottleneck Blocks**: Each residual block follows the bottleneck design (1×1 → 3×3 → 1×1 convolutions) with integrated Squeeze-and-Excitation modules
 - **Progressive Channel Growth**: Feature channels expand from 32 → 64 → 128 → 238 across network stages
 - **Regularization Strategy**: Dropout layers between stages with rates progressing from 0.1 to 0.3
+
+
 
 ## Usage
 
@@ -53,3 +55,13 @@ For optimal results, consider implementing:
 - PyTorch 1.7.0 or higher
 - torchvision (for datasets and transforms)
 - numpy
+
+## Results
+![Model Architecture](images/loss%20and%20accuracy.png) 
+```
+Final Model Summary:
+Trainable Parameters: 4,988,974
+Best Train Accuracy: 98.14%
+Best Test Accuracy: 95.87%
+Total Training Time: 263.07 minutes
+```
