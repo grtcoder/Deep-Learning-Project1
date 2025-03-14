@@ -53,8 +53,3 @@ For optimal results, consider implementing:
 - PyTorch 1.7.0 or higher
 - torchvision (for datasets and transforms)
 - numpy
-
-
-## License
-
-MIT
