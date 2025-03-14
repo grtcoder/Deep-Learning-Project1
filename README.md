@@ -1,8 +1,7 @@
-# ImprovedResNet
+# Deep Learning Project 1
+In this project we trained a constrained model ( <= 5Million ) parameters on a variant of CIFAR-10 dataset and achieved ~86% test set accuracy. We used ImprovedResNet architecture as baseline for our implementation and use extensive data augmentation techniques to increase generalization. Also we used post-processing techniques like SWA ( Stochastic Weight averaging ) and TTA ( Test time Augmentation ) to improve test results.
 
-A high-performance convolutional neural network architecture that enhances the traditional ResNet design with Squeeze-and-Excitation attention mechanisms and strategic dropout for improved generalization.
-
-## Overview
+## ImprovedResNet
 
 ImprovedResNet offers a careful balance between model capacity, computational efficiency, and regularization techniques. This implementation is specifically optimized for classification tasks with a parameter budget under 5M, making it suitable for resource-constrained environments while maintaining competitive accuracy.
 
@@ -55,18 +54,6 @@ For optimal results, consider implementing:
 - torchvision (for datasets and transforms)
 - numpy
 
-## Citation
-
-If you use this architecture in your research, please cite:
-
-```
-@article{improvedresnet2025,
-  title={ImprovedResNet: Enhanced ResNet Architecture with Squeeze-Excitation and Strategic Dropout},
-  author={Your Name},
-  journal={arXiv preprint},
-  year={2025}
-}
-```
 
 ## License
 
